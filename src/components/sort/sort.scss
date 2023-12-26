@@ -1,0 +1,59 @@
+@import '../../styles/shared.scss';
+
+.sort {
+    position: relative;
+    width: fit-content;
+}
+
+.sort-trigger {
+    @include button-reset();
+    min-height: 4.5rem;
+    border-radius: 10px;
+    background-color: $color-dark-blue-scale-100;
+    color: $color-dark-blue-scale-00;
+    padding: 1rem;
+    font-size: $font-size-sm;
+
+    &__content {
+        display: flex;
+        align-items: baseline;
+        column-gap: 0.5rem;
+    }
+
+    &--bold {
+        font-weight: $font-weight-bold;
+    }
+}
+
+.sort-list {
+    @include list-reset();
+    position: absolute;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.35);
+    max-width: 16.25rem;
+    overflow: hidden;
+    z-index: 10;
+
+    li {
+        width: 100%;
+        min-height: 3rem;
+        background-color: $color-dark-blue-scale-00;
+        padding: 0.75rem 1.5rem;
+        color: $color-dark-blue-scale-60;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-purple;
+        }
+    }
+
+    li:not(:last-child) {
+        border-bottom: 1px solid rgba($color-dark-blue-scale-100, 0.15)
+    }
+
+}

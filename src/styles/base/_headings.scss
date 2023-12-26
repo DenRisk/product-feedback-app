@@ -1,0 +1,26 @@
+@import '../shared.scss';
+
+h1, h2, h3, h4 {
+    line-height: normal;
+    font-weight: $font-weight-bold;
+}
+
+h1 {
+    font-size: $font-size-2xl;
+    letter-spacing: -0.333px;
+}
+
+h2 {
+    font-size: $font-size-xl;
+    letter-spacing: -0.25px;
+}
+
+h3 {
+    font-size: $font-size-lg;
+    letter-spacing: -0.25px;
+}
+
+h4 {
+    font-size: $font-size-sm;
+    letter-spacing: -0.2px;
+}

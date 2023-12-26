@@ -1,0 +1,22 @@
+$padding-inline: clamp(1rem, 5vw, 4rem);
+$content-max-width: 1200px;
+
+.content-grid {
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax($padding-inline, 1fr)
+    [content-start] min(100% - ($padding-inline * 2), $content-max-width) [content-end]
+    minmax($padding-inline, 1fr) [full-width-end];
+}
+
+.content-grid > :not(.full-width),
+.full-width > :not(.full-width) {
+  grid-column: content;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+
+  display: grid;
+  grid-template-columns: inherit;
+}
