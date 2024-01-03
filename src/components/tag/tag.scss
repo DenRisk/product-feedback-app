@@ -1,27 +1,35 @@
 @import '../../styles/shared.scss';
 
-$tag-hv: #CFD7FF;
+$tag-hv: #cfd7ff;
 
 .tag {
-    @include button-reset();
-    min-width: 3rem;
-    min-height: 1.875rem;
-    background-color: $color-dark-blue-scale-40;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    color: $color-blue;
-    font-size: $font-size-sm;
-    font-weight: $font-weight-semiBold;
+  @include button-reset();
+  min-width: 3rem;
+  min-height: 1.875rem;
+  background-color: $color-dark-blue-scale-40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: $color-blue;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semiBold;
+  padding: 0 1rem;
+  cursor: default;
 
+  span::first-letter {
+    text-transform: capitalize;
+  }
 
+  &--hover {
     &:hover {
-        background-color: $tag-hv;
+      background-color: $tag-hv;
+      cursor: pointer;
     }
+  }
 
-    &:active {
-        background-color: $color-blue;
-        color: $color-dark-blue-scale-00;
-    }
+  &--active {
+    background-color: $color-blue;
+    color: $color-dark-blue-scale-00;
+  }
 }

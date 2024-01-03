@@ -7,7 +7,6 @@
 
 .sort-trigger {
     @include button-reset();
-    min-height: 4.5rem;
     border-radius: 10px;
     background-color: $color-dark-blue-scale-100;
     color: $color-dark-blue-scale-00;
@@ -18,7 +17,7 @@
         display: flex;
         align-items: baseline;
         column-gap: 0.5rem;
-    }
+    } 
 
     &--bold {
         font-weight: $font-weight-bold;
