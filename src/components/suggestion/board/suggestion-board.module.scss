@@ -1,0 +1,27 @@
+@import "../../../styles/shared";
+
+.suggestionsBoard {
+  min-height: 8.5rem;
+  border-radius: 10px;
+  background-image: url('../../../assets/images/background-header-desktop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-dark-blue-scale-00;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+
+  > div {
+    margin-top: auto;
+  }
+
+  .title {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+  }
+
+  .label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+  }
+}

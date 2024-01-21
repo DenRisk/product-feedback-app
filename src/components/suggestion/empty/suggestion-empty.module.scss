@@ -1,0 +1,23 @@
+@import '../../../styles/shared';
+
+.suggestionsEmpty {
+  min-height: 600px;
+  background-color: $color-dark-blue-scale-00;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > img {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 400px;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,8 @@
+@import "../../../styles/shared";
+.link {
+  color: $color-blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

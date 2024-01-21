@@ -1,0 +1,11 @@
+.suggestionPage {
+    display: grid;
+    grid-template-columns: 16rem auto;
+    column-gap: 2rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}

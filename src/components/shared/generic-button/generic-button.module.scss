@@ -1,0 +1,77 @@
+@import '../../../styles/shared';
+
+.button {
+  @include button-reset();
+  min-width: 10rem;
+  min-height: 2.75rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-dark-blue-scale-00;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  column-gap: 0.5rem;
+  height: fit-content;
+}
+
+.purple {
+  background-color: $color-purple;
+
+  &:hover {
+    background-color: $color-purple-hv;
+  }
+}
+
+.blue {
+  background-color: $color-blue;
+
+  &:hover {
+    background-color: $color-blue-hv;
+  }
+}
+
+.grey {
+  background-color: $color-dark-blue-scale-80;
+
+  &:hover {
+    background-color: $color-dark-blue-scale-60;
+  }
+}
+
+.red {
+  background-color: $color-red;
+
+  &:hover {
+    background-color: $color-red-hv;
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  min-height: fit-content;
+  color: $color-dark-blue-scale-60;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  line-height: 0.8;
+  padding: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.underline {
+  background-color: $color-dark-blue-scale-80;
+  min-height: 3.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  line-height: 0.8;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

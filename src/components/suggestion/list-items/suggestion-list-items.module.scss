@@ -1,0 +1,10 @@
+.suggestionsListItems {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.25rem;
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}

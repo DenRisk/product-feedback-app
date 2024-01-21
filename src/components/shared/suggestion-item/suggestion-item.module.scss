@@ -1,0 +1,37 @@
+@import '../../../styles/shared';
+
+.suggestionsItem {
+  border-radius: 10px;
+  min-height: 9.5rem;
+  background-color: $color-dark-blue-scale-00;
+  display: grid;
+  padding: 2rem;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+  grid-template-columns: fit-content(100%) auto fit-content(100%);
+  grid-template-areas:
+    'upvotes description comments'
+    '. category comments';
+
+  .upvotes {
+    grid-area: upvotes;
+  }
+
+  .text {
+    grid-area: description;
+  }
+
+  .description {
+    color: $color-dark-blue-scale-60;
+  }
+
+  .category {
+    grid-area: category;
+  }
+
+  .commentsCount {
+    display: flex;
+    align-items: center;
+    grid-area: comments;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/shared';
+
+.textInput {
+    border-radius: 5px;
+    background-color: $color-dark-blue-scale-20;
+    min-height: 3rem;
+    min-width: 16rem;
+    color: $color-dark-blue-scale-100;
+    border: none;
+    outline: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.inputError {
+    border: 1px solid $color-red;
+}
+
+.textError {
+    color: $color-red;
+}

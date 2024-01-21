@@ -1,0 +1,11 @@
+@import "../../../styles/shared";
+
+.commentsCount {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+
+  > div {
+    font-weight: $font-weight-bold;
+  }
+}

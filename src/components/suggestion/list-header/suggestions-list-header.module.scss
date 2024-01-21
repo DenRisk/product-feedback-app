@@ -1,0 +1,16 @@
+@import "../../../styles/shared";
+
+.suggestionsListHeader {
+  min-height: 4.5rem;
+  background-color: $color-dark-blue-scale-100;
+  border-radius: 10px;
+  color: $color-dark-blue-scale-00;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1.5rem;
+  column-gap: 2.5rem;
+
+  button {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../styles/shared.scss";
+.contentContainer {
+  max-width: 46rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.commentsContainer {
+  background-color: $color-dark-blue-scale-00;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}

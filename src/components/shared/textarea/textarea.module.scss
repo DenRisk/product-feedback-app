@@ -1,0 +1,16 @@
+@import "../../../styles/shared";
+
+.textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $color-dark-blue-scale-40;
+    border-radius: 5px;
+    font-size: $font-size-sm;
+    outline: none;
+    transition: all .2s;
+    background-color: $color-dark-blue-scale-20;
+
+    &:active, &:focus {
+      border-color: $color-blue
+    }
+}

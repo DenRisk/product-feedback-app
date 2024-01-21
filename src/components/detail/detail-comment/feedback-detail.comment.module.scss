@@ -1,0 +1,41 @@
+.comment {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-areas:  'image user user reply'
+                        '. comment comment comment'
+                        '. textarea textarea post';
+  grid-template-columns: fit-content(100%) auto auto 0fr;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+
+button {
+  grid-area: post;
+}
+}
+
+.imageContainer {
+  grid-area: image;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userContainer {
+  grid-area: user;
+}
+
+.commentText {
+  grid-area: comment;
+}
+
+.replyContainer {
+  grid-area: reply;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textareaContainer {
+  grid-area: textarea;
+}
